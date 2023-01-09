@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Active Books List">
+        <p slot="footer">Card Footer</p>
+        <lightning-button label="Show" slot="actions" onclick={display}></lightning-button>
+        <table if:true={show}>
+            <tbody>
+                <tr>
+                    <th>
+                        Book Name
+                    </th>
+                    <th>
+                        Book Author
+                    </th>
+                </tr>
+                <template for:each={getbooklist.data} for:item="book">
+                    <tr key={book.Id}>
+                        <td>
+                            {book.Name__c}
+                        </td>
+                        <td>
+                            {book.Author__c}
+                        </td>
+                    </tr>
+
+                </template>
+            </tbody>
+        </table>
+      <!-- <br>
+        <button class="btn btn-danger btn-sm float-right" id="right" style="background-color: aquamarine;"  onclick={display}>Show</button>
+        --> 
+    </lightning-card>
+</template>
