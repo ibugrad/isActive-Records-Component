@@ -1,4 +1,4 @@
-import { LightningElement, wire } from 'lwc';
+ndsfjsd Idsnf sdöfo l s oBJ irsbgsd fusdföe fieoqå d fhdhyf ekimport { LightningElement, wire } from 'lwc';
 import getBooks from '@salesforce/apex/BookUtility.amountOfBooks';
 export default class acticeBooks extends LightningElement {
     @wire(getBooks)getbooklist;
