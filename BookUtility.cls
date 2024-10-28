@@ -1,4 +1,4 @@
-public class BookUtility {
+wpublic class BookUtility {
 
     @AuraEnabled(cacheable=True)
     public static List<Book__c> amountOfBooks(){
