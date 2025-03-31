@@ -1,4 +1,3 @@
-a
 public class BookUtility {
 
     @AuraEnabled(cacheable=True)
